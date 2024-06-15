@@ -1,6 +1,6 @@
 function NavBar(){
     return(
-    <h1>ola</h1>
+    <h1>penis</h1>
     )
 }
 export default NavBar

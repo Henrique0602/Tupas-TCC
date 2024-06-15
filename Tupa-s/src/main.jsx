@@ -6,6 +6,7 @@ import { createBrowserRouter , RouterProvider } from 'react-router-dom'
 import Login from './Pages/Login.jsx'
 import Cadastrar from './Pages/Cadastrar.jsx'
 import PageNotFound from './Pages/PageNotFound.jsx'
+import RecuperarSenha from './Pages/RecuperarSenha.jsx'
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Login /> },
       { path: 'Cadastrar', element: <Cadastrar /> },
+      { path: 'Recuperarsenha', element: <RecuperarSenha/> },
       { path: '*', element: <PageNotFound /> },
     ],
   },
