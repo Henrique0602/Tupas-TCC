@@ -8,13 +8,17 @@ export default {
     extend: {
       
       colors:{
-        "Fundo" : "#FFF8E9",
-        "Vinho" : "#380012"
+        "color_bg" : "#FFF8E9",
+        "color_vinho" : "#380012",
+        "colortxt_preto": "#2B2B2B",
+        "colortxt_white": "#ffffff",
+        "color_bege": "#DCCEB2",
+        "color_verde": "#002500",
       },
 
       backgroundImage: {
         'Logo': "url('public/Logo.png')",
-        'FundoLogin': "url('public/FundoLogin.png')",
+        'Fundo': "url('public/FundoLogin.png')",
       },
 
 
