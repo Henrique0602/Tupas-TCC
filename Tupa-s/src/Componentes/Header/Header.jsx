@@ -1,6 +1,6 @@
 function Header(){
     return(
-        penis
+     <h1>ola</h1>
     )
 }
 export default Header

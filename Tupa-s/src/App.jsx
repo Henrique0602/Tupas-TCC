@@ -1,14 +1,11 @@
-import './App.css'
-import Login from './Pages/Login'
+import { Outlet } from 'react-router-dom';
 
 function App() {
-
-
   return (
-    <>
-      <Login/>
-    </>
-  )
+    <div>
+      <Outlet />
+    </div>
+  );
 }
 
-export default App
+export default App;
