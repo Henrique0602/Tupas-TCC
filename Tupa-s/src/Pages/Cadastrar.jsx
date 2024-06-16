@@ -45,7 +45,10 @@ function Cadastrar() {
                         </form>
 
                         <div className="flex flex-col items-center">
+                            <Link to="/" className="font-semibold text-color_vinho hover:underline text-sm">
                             <button type="submit" className="bg-color_vinho text-colortxt_white py-2 rounded-3xl w-60 text-center mb-2 hover:bg-color_bege hover:text-color_vinho">Cadastrar</button>
+                            </Link>
+                            
 
                             <div className="flex flex-row">
                                 <span className="text-color_vinho mr-2 text-sm">Já possui uma conta?</span>

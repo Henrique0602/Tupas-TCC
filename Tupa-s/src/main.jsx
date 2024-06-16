@@ -7,6 +7,7 @@ import Login from './Pages/Login.jsx'
 import Cadastrar from './Pages/Cadastrar.jsx'
 import PageNotFound from './Pages/PageNotFound.jsx'
 import RecuperarSenha from './Pages/RecuperarSenha.jsx'
+import Home from './Pages/Home.jsx'
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
       { index: true, element: <Login /> },
       { path: 'Cadastrar', element: <Cadastrar /> },
       { path: 'Recuperarsenha', element: <RecuperarSenha/> },
+      { path: 'Home', element: <Home/> },
       { path: '*', element: <PageNotFound /> },
     ],
   },

@@ -19,12 +19,12 @@ function Login() {
 
           <form className="mb-2">
             <div className="relative mb-5 drop-shadow-md">
-              <span className="absolute inset-y-0 left-3 flex items-center text-color_vinho"><FaRegEnvelope/></span>
+              <span className="absolute inset-y-0 left-3 flex items-center text-color_vinho"><FaRegEnvelope /></span>
               <input type="email" className="w-96 pl-10 pr-4 py-2 border rounded-full bg-white placeholder:text-color_vinho text-color_vinho focus:outline-none" placeholder="Digite seu e-mail" />
             </div>
 
             <div className="relative mb-5 drop-shadow-md">
-              <span className="absolute inset-y-0 left-3 flex items-center text-color_vinho"><FaNeuter/></span>
+              <span className="absolute inset-y-0 left-3 flex items-center text-color_vinho"><FaNeuter /></span>
               <input type="password" className="w-full pl-10 pr-4 py-2 border rounded-full bg-white placeholder:text-color_vinho text-color_vinho focus:outline-none" placeholder="Digite sua Senha" />
             </div>
           </form>
@@ -38,7 +38,9 @@ function Login() {
           </div>
 
           <div className="flex flex-col items-center">
-            <button type="submit" className="bg-color_vinho text-colortxt_white py-2 rounded-3xl w-60 mb-2 text-center hover:bg-color_bege hover:text-color_vinho font-semibold">Entrar</button>
+            <Link to="Home" className="font-semibold text-color_vinho hover:underline text-sm">
+              <button type="submit" className="bg-color_vinho text-colortxt_white py-2 rounded-3xl w-60 mb-2 text-center hover:bg-color_bege hover:text-color_vinho font-semibold">Entrar</button>
+            </Link>
             <div className="flex flex-row">
               <span className="text-color_vinho mr-2 text-sm">Sem Conta? </span>
               <Link to="Cadastrar" className="font-semibold text-color_vinho hover:underline text-sm">Cadastrar-se</Link>
