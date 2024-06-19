@@ -19,7 +19,6 @@ export default {
       backgroundImage: {
         'Logo': "url('public/Logo.png')",
         'Fundo': "url('.//public/FundoLogin.png')",
-        'Home' : "url('public/TelaFundoHome.png')"
       },
 
 
