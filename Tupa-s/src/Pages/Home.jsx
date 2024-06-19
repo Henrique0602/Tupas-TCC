@@ -1,26 +1,16 @@
 import { Link } from "react-router-dom"
-import { FaRegUserCircle } from "react-icons/fa";
-import NavBar from "../Componentes/Navbar/Navbar";
+
+import Header from "../Componentes/Header/Header";
 
 function Home() {
     return (
-
         <div className="min-h-screen bg-Home bg-cover">
-            <div className=" flex justify-between items-center bg-color_bg text-color_vinho p-5  ">
-                <div className="">
-                    <img className = "w-16 ml-10" src="../Public/Logo.png" alt="" />
-                </div>  
-                <div className="">
-                     <NavBar />
-                </div>
-
-                <div className=""> 
-                     <FaRegUserCircle  className="text-3xl mr-3" />
-                </div>
-              
+            <Header/>
+            <div className="bg-color_bg bg-opacity-75 p-8 rounded-lg shadow-md w-8/12 h-full flex flex-row justify-start ">
+            
             </div>
-
         </div>
+       
     )
 }
 export default Home

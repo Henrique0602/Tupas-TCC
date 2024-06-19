@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 
+
 function NavBar() {
     return ( 
-
+        
     <nav>
         <ul className='flex gap-4 ml-3 text-colorTxt'>
             <li><Link to ="Home">Home</Link></li>

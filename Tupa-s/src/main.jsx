@@ -8,6 +8,10 @@ import Cadastrar from './Pages/Cadastrar.jsx'
 import PageNotFound from './Pages/PageNotFound.jsx'
 import RecuperarSenha from './Pages/RecuperarSenha.jsx'
 import Home from './Pages/Home.jsx'
+import Filtragem from './Pages/Filtragem.jsx'
+
+
+
 
 const router = createBrowserRouter([
   {
@@ -18,7 +22,9 @@ const router = createBrowserRouter([
       { path: 'Cadastrar', element: <Cadastrar /> },
       { path: 'Recuperarsenha', element: <RecuperarSenha/> },
       { path: 'Home', element: <Home/> },
+      { path : 'Filtragem', element: <Filtragem/> },
       { path: '*', element: <PageNotFound /> },
+
     ],
   },
 ]);
