@@ -9,39 +9,42 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
+
 function Home() {
-  
+
+    const el = useRef(null);
+    const tl = useRef(null);
+
     useLayoutEffect(() => {
-        gsap.to(".Servicos", {
-            x: 0,
-            opacity: 1,
-            rotate: "0deg",
-            scrollTrigger:{
-                trigger: ".Servicos",
+        tl.current = gsap.timeline({
+            scrollTrigger: {
+                trigger: el.current,
+                scrub: true,
                 //markers: true,
-                start : "top 400px",
-                end : "bottom 600px",
-                scrub: true        
-              }
-           
-        });
+                start: "top 700px",  // Ajuste conforme necessário
+                end: "bottom 500px"  // Ajuste conforme necessário
+            }
+        })
+            .fromTo("#estetica", { opacity: 0, y: 160 }, { opacity: 1, y: 0, duration: 1, ease: "power2.out" })
+            .fromTo("#saude", { opacity: 0, y: 160 }, { opacity: 1, y: 0, duration: 1, ease: "power2.out" }, "-=0.5") // Delay para começar meio segundo depois do anterior
+            .fromTo("#saudeMental", { opacity: 0, y: 160 }, { opacity: 1, y: 0, duration: 1, ease: "power2.out" }, "-=0.5"); // Delay para começar meio segundo depois do anterior
 
-        return()=>{
+
+
+
+        return () => {
             gsap.killTweensOf(".Servicos")
-
 
         }
     }, [])
 
 
-    
-
-
+  
 
     return (
         <div className=" home min-h-screen bg-Fundo bg-cover">
             <Header />
-            <div className="p-20 w-full h-full flex flex-row bg-color_bg bg-opacity-75 ">
+            <div className="p-32 w-full h-full flex flex-row bg-color_bg bg-opacity-75 ">
                 <div className="flex-col text-color_vinho ml-12 mt-6 mb-10">
                     <h2 className=" font-bold text-4xl mb-10">Home</h2>
                     <div className="flex-col ">
@@ -58,34 +61,34 @@ function Home() {
 
             </div>
 
-            <div className="Servicos">
+            <div className="Servicos" ref={el}>
                 <h1 className="text-4xl text-color text-color_bg font-bold px-20 mt-24 ml-10 mb-32 ">
                     Serviços
                 </h1>
                 <div className=" flex flex-col md:flex-row  p-10 justify-around items-center  ">
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-center " id="estetica">
                         <h1 className="text-colortxt_white font-semibold mb-8 text-2xl ">
                             Estética Física
                         </h1>
                         <img className="w-80 rounded-xl mt-5 hover:scale-110 transition-transform duration-300 ease-in-out  mb-10" src="/Public/Físico.jpg" />
                     </div>
 
-                    <div className="flex flex-col items-center">
-                        <h1 className="text-colortxt_white font-semibold mb-8 text-2xl">
+                    <div className="flex flex-col items-center " id="saude">
+                        <h1 className="text-colortxt_white font-semibold mb-8 text-2xl" >
                             Saúde Corporal
                         </h1>
                         <img className="w-80 rounded-xl mt-5 hover:scale-110 transition-transform duration-300 ease-in-out  mb-10" src="/Public/SaudeCorporal.jpg" />
                     </div>
 
-                    <div className="flex flex-col items-center">
-                        <h1 className="text-colortxt_white font-semibold mb-8 text-2xl">
+                    <div className="flex flex-col items-center" id="saudeMental">
+                        <h1 className="text-colortxt_white font-semibold mb-8 text-2xl" >
                             Saúde Mental
                         </h1>
                         <img className="w-80 rounded-xl mt-5 hover:scale-110 transition-transform duration-300 ease-in-out mb-10" src="/Public/Mente.jpg" />
                     </div>
                 </div>
 
-                <div className="w-full flex flex-row justify-center mt-28 mb-24">
+                <div className="w-full flex flex-row justify-center mt-28 mb-24" id="button">
                     <button
                         type="submit"
                         className="bg-color_bg text-color text-color_vinho py-2 rounded-xl w-60 mb-2 text-center font-semibold ">
@@ -97,54 +100,56 @@ function Home() {
 
             <Planos />
 
-            <div className="px-4 md:px-10 h-full w-full p-10 mb-10 ">
-                <h1 className="text-4xl font-bold text-color_bg p-10 ml-4 mb-10">Consultas Online</h1>
+            <div className="Medicos">
 
-                <div className="flex flex-row justify-around">
-                    <div className="flex flex-col">
-                        <div className="bg-color_bg bg-opacity-75 p-8 rounded-lg shadow-md flex flex-col md:flex-row items-center md:items-start mb-5 " >
-                            <img className="w-32 rounded-full object-cover md:ml-4 mb-4 md:mb-0" src="/Public/Ellipse 56.png" alt="" />
-                            <div className="flex flex-col ml-4">
-                                <h1 className="font-bold p-2 ">Dr.Fulano Ciclano</h1>
-                                <p className="p-2 ">XX Anos</p>
-                                <p className="p-2 "> Nutricionista</p>
+                <div className="px-4 md:px-10 h-full w-full p-10 mb-10 ">
+                    <h1 className="text-4xl font-bold text-color_bg p-10 ml-4 mb-10">Consultas Online</h1>
+
+                    <div className="flex flex-row justify-around">
+                        <div className="flex flex-col">
+                            <div className="bg-color_bg bg-opacity-75 p-8 rounded-lg shadow-md flex flex-col md:flex-row items-center md:items-start mb-5 "id="Nutri" >
+                                <img className="w-32 rounded-full object-cover md:ml-4 mb-4 md:mb-0" src="/Public/Ellipse 56.png" alt="" />
+                                <div className="flex flex-col ml-4">
+                                    <h1 className="font-bold p-2 ">Dr.Fulano Ciclano</h1>
+                                    <p className="p-2 ">XX Anos</p>
+                                    <p className="p-2 "> Nutricionista</p>
+                                </div>
+
                             </div>
 
-                        </div>
+                            <div className="bg-color_bg bg-opacity-75 p-8 rounded-lg shadow-md flex flex-col md:flex-row items-center md:items-start mb-5 " id="Personal">
 
-                        <div className="bg-color_bg bg-opacity-75 p-8 rounded-lg shadow-md flex flex-col md:flex-row items-center md:items-start mb-5 ">
+                                <img className="w-32  rounded-full object-cover md:ml-4 mb-4 md:mb-0" src="/Public/Ellipse 56 (1).png" alt="" />
+                                <div className="flex flex-col ml-4">
+                                    <h1 className="font-bold p-2 ">Fulano Ciclano</h1>
+                                    <p className="p-2 ">XX Anos</p>
+                                    <p className="p-2 "> Personal</p>
+                                </div>
 
-                            <img className="w-32  rounded-full object-cover md:ml-4 mb-4 md:mb-0" src="/Public/Ellipse 56 (1).png" alt="" />
-                            <div className="flex flex-col ml-4">
-                                <h1 className="font-bold p-2 ">Fulano Ciclano</h1>
-                                <p className="p-2 ">XX Anos</p>
-                                <p className="p-2 "> Personal</p>
+
                             </div>
 
 
-                        </div>
+                            <div className="bg-color_bg bg-opacity-75 p-8 rounded-lg shadow-md flex flex-col md:flex-row items-center md:items-start mb-5 " id="Psico">
 
+                                <img className="w-32  rounded-full object-cover md:ml-4 mb-4 md:mb-0" src="/Public/Ellipse 57.png" alt="" />
+                                <div className="flex flex-col ml-4">
+                                    <h1 className="font-bold p-2 ">Fulana Ciclana</h1>
+                                    <p className="p-2 ">XX Anos</p>
+                                    <p className="p-2 "> Psicóloga</p>
+                                </div>
 
-                        <div className="bg-color_bg bg-opacity-75 p-8 rounded-lg shadow-md flex flex-col md:flex-row items-center md:items-start mb-5 ">
-
-                            <img className="w-32  rounded-full object-cover md:ml-4 mb-4 md:mb-0" src="/Public/Ellipse 57.png" alt="" />
-                            <div className="flex flex-col ml-4">
-                                <h1 className="font-bold p-2 ">Fulana Ciclana</h1>
-                                <p className="p-2 ">XX Anos</p>
-                                <p className="p-2 "> Psicóloga</p>
                             </div>
-
                         </div>
-                    </div>
 
 
-                    <div className="bg-color_bg bg-opacity-75 p-8 rounded-lg h-full text-wrap w-80 text-ls " >
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quis reprehenderit, officia recusandae architecto voluptatibus rem. Cupiditate temporibus quidem quos iure vero eos earum, optio deserunt, totam corrupti beatae doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quis reprehenderit, officia recusandae architecto voluptatibus rem. Cupiditate temporibus quidem quos iure vero eos earum, optio deserunt, totam corrupti beatae doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quis reprehenderit, officia recusandae architecto voluptatibus rem. Cupiditate temporibus quidem quos iure vero eos earum, optio deserunt, totam corrupti beatae doloribus!
-                        </p>
+                        <div className="bg-color_bg bg-opacity-75 p-8 rounded-lg h-full text-wrap w-80 text-ls " id="text" >
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quis reprehenderit, officia recusandae architecto voluptatibus rem. Cupiditate temporibus quidem quos iure vero eos earum, optio deserunt, totam corrupti beatae doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quis reprehenderit, officia recusandae architecto voluptatibus rem. Cupiditate temporibus quidem quos iure vero eos earum, optio deserunt, totam corrupti beatae doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quis reprehenderit, officia recusandae architecto voluptatibus rem. Cupiditate temporibus quidem quos iure vero eos earum, optio deserunt, totam corrupti beatae doloribus!
+                            </p>
+                        </div>
                     </div>
                 </div>
-
 
             </div>
 

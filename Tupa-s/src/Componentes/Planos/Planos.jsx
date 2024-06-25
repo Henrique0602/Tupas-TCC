@@ -21,28 +21,10 @@ function Planos() {
                 end: "bottom 900px" 
             }
         })
-        .fromTo("#plano1", {
-            opacity: 0,
-            y: 160,
-        }, {
-            opacity: 1,
-            y: 0
-        })
-        .fromTo("#plano2", {
-            opacity: 0,
-            y: 160,
-        }, {
-            opacity: 1,
-            y: 0
-        })
-        .fromTo("#plano3", {
-            opacity: 0,
-            y: 160,
-        }, {
-            opacity: 1,
-            y: 0
-        });
-        
+    
+        .fromTo("#plano1", { opacity: 0, y: 160 }, { opacity: 1, y: 0, duration: 1, ease: "power2.out" })
+            .fromTo("#plano2", { opacity: 0, y: 160 }, { opacity: 1, y: 0, duration: 1, ease: "power2.out" }, "-=0.5") // Delay para começar meio segundo depois do anterior
+            .fromTo("#plano3", { opacity: 0, y: 160 }, { opacity: 1, y: 0, duration: 1, ease: "power2.out" }, "-=0.5"); // Delay para começar meio segundo depois do anterior
 
         
 
