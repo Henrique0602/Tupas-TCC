@@ -1,35 +1,50 @@
-import React from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useLayoutEffect, useRef } from "react";
 
 
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Planos() {
 
     const el = useRef(null);
-    const tl = useRef()
+    const tl = useRef(null);
 
     useLayoutEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-        const ctx = gsap.context(() => {
-            tl.current=gsap.timeline({
-                scrollTrigger: {
-                    trigger: ".cards",
-                    scrub: true,
-                    markers: true,
-                    start:"top 800px",
-                    end: "bottom 920px"
-                }
-            })
-            .fromTo("#card1", {
-                opacity:0,
-                y:150,
-            },{
-                opacity:1,
-                y:0
-            })
-        }, el)
+        tl.current = gsap.timeline({
+            scrollTrigger: {
+                trigger: el.current,
+                scrub: true,
+                //markers: true,
+                start: "top 600px",
+                end: "bottom 900px" 
+            }
+        })
+        .fromTo("#plano1", {
+            opacity: 0,
+            y: 160,
+        }, {
+            opacity: 1,
+            y: 0
+        })
+        .fromTo("#plano2", {
+            opacity: 0,
+            y: 160,
+        }, {
+            opacity: 1,
+            y: 0
+        })
+        .fromTo("#plano3", {
+            opacity: 0,
+            y: 160,
+        }, {
+            opacity: 1,
+            y: 0
+        });
+        
+
+        
 
         return()=>{
             gsap.killTweensOf(".cards")
@@ -45,7 +60,7 @@ function Planos() {
             <div className='cards' ref={el}>
                 <div className="flex flex-col md:flex-row gap-20 p-10 justify-center items-center " >
                     {/* Gratis */}
-                    <div className="bg-color_vinho text-white rounded-lg shadow-lg p-10 flex flex-col justify-between skew-y-6 hover:scale-110 transition-transform duration-300 ease-in-out" id='card1'>
+                    <div className="bg-color_vinho text-white rounded-lg shadow-lg p-10 flex flex-col justify-between skew-y-6 hover:scale-110 transition-transform duration-300 ease-in-out" id='plano1'>
                         <div>
                             <h3 className="text-xl font-semibold mb-4">Gratis</h3>
                             <p className="text-4xl font-bold">
@@ -96,7 +111,7 @@ function Planos() {
                     </div>
 
                     {/* TRIMESTRAL */}
-                    <div className="bg-color_vinho text-white rounded-lg shadow-lg p-8 flex flex-col justify-between skew-y-6 hover:scale-110 transition-transform duration-300 ease-in-out  " id='card2'>
+                    <div className="bg-color_vinho text-white rounded-lg shadow-lg p-8 flex flex-col justify-between skew-y-6 hover:scale-110 transition-transform duration-300 ease-in-out  " id='plano2'>
                         <div>
                             <h3 className="text-xl font-semibold mb-4">TRIMESTRAL</h3>
                             <p className="text-4xl font-bold">
@@ -147,7 +162,7 @@ function Planos() {
                     </div>
 
                     {/* Anual */}
-                    <div className="bg-color_vinho text-white rounded-lg shadow-lg p-8 flex flex-col justify-between skew-y-6 hover:scale-110 transition-transform duration-300 ease-in-out" id='card3'>
+                    <div className="bg-color_vinho text-white rounded-lg shadow-lg p-8 flex flex-col justify-between skew-y-6 hover:scale-110 transition-transform duration-300 ease-in-out" id='plano3'>
                         <div>
                             <h3 className="text-xl font-semibold mb-4">Anual</h3>
                             <p className="text-4xl font-bold">

@@ -2,7 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.Servicos{
-    transform: translateY(-50px) rotate(180deg);
-    opacity: 0;
-}
