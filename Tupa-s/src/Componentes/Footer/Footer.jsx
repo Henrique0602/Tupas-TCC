@@ -11,9 +11,7 @@ function Footer(){
             <div className="flex flex-row">
                 <ul className="flex flex-row space-x-4">
                     <li><img src="insta_footer.png"></img></li>
-                    <li><img src="face_footer.png"></img></li>
                     <li><img src="ttk_footer.png"></img></li>
-                    <li><img src="twt_footer.png"></img></li>
                 </ul>
                
             </div>
