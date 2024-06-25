@@ -10,9 +10,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 function Home() {
-    const el = useRef(null);
-    const tl = useRef()
-
+  
     useLayoutEffect(() => {
         gsap.to(".Servicos", {
             x: 0,
@@ -37,32 +35,7 @@ function Home() {
 
 
     
-    useLayoutEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-        const ctx = gsap.context(() => {
-            tl.current=gsap.timeline({
-                scrollTrigger: {
-                    trigger: ".cards",
-                    scrub: true,
-                    markers: true,
-                    start:"top 800px",
-                    end: "bottom 920px"
-                }
-            })
-            .fromTo("#card1", {
-                opacity:0,
-                y:150,
-            },{
-                opacity:1,
-                y:0
-            })
-        }, el)
 
-        return()=>{
-            gsap.killTweensOf(".cards")
-
-        }
-    },[])
 
 
     return (

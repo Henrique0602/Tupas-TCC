@@ -1,8 +1,42 @@
 import React from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useLayoutEffect, useRef } from "react";
 
 
 
 function Planos() {
+
+    const el = useRef(null);
+    const tl = useRef()
+
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        const ctx = gsap.context(() => {
+            tl.current=gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".cards",
+                    scrub: true,
+                    markers: true,
+                    start:"top 800px",
+                    end: "bottom 920px"
+                }
+            })
+            .fromTo("#card1", {
+                opacity:0,
+                y:150,
+            },{
+                opacity:1,
+                y:0
+            })
+        }, el)
+
+        return()=>{
+            gsap.killTweensOf(".cards")
+
+        }
+    },[])
+
     return (
         <div className="card-container bg-color_bg bg-opacity-75 shadow-md  w-full h-screen">
             <h1 className="text-4xl text-color text-color_vinho font-bold p-20 ml-4 ">
