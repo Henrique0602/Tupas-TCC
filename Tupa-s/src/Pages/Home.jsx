@@ -5,6 +5,7 @@ import Footer from "../Componentes/Footer/Footer";
 import { FaKeyboard } from "react-icons/fa";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import CardsSlider from "../Componentes/CardsSlider/CardsSlider";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -43,9 +44,9 @@ function Home() {
         <>
             <div className="min-h-screen bg-Fundo bg-cover">
                 <Header />
-                <div className="p-20 w-full h-full flex flex-row bg-color_bg opacity-75 ">
+                <div className="p-10 w-full h-full flex flex-row bg-color_bg opacity-75 justify-between items-center">
                     <div className="flex-col text-color_vinho ml-12 mt-6 mb-10">
-                        <h2 className=" font-bold text-2xl mb-10">Home</h2>
+                        <h2 className=" font-bold text-4xl mb-10 flex ">Home</h2>
                         <div className="flex-col ">
                             <h1 className="text-2xl font-semibold text-wrap w-80 mb-2">
                                 Seu guia para o sucesso físico e mental.
@@ -54,9 +55,11 @@ function Home() {
                                 Lorem ipsum dolor sit amet consectetur. Id luctus a a sed lectus
                                 aenean aenean tortor. Ultrices felis sed donec est urna aliquet.
                             </p>
-                        </div>
-                    </div>
+                        </div> 
+                    </div> 
+                    <CardsSlider/>        
                 </div>
+                
 
                 <h1 className="text-4xl text-color text-color_bg font-bold px-20 mt-24 ml-10 mb-32 text-center">
                     Serviços:
