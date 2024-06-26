@@ -1,5 +1,4 @@
 import { useLayoutEffect, useRef } from "react";
-import { Link } from "react-router-dom";
 import Header from "../Componentes/Header/Header";
 import Planos from "../Componentes/Planos/Planos";
 import Footer from "../Componentes/Footer/Footer";
@@ -68,21 +67,21 @@ function Home() {
                             <h1 className="text-colortxt_white font-semibold mb-2 text-2xl" >
                                 Estética Física
                             </h1>
-                            <img className="w-72 rounded-xl mt-5 hover:scale-110 transition-transform duration-300 ease-in-out" src="./public/Físico.jpg" />
+                            <img className="w-72 rounded-xl mt-5 hover:scale-110 transition-transform duration-300 ease-in-out" src="/Físico.jpg" />
                         </div>
 
                         <div className="flex flex-col items-center" id="saude">
                             <h1 className="text-colortxt_white font-semibold mb-2 text-2xl">
                                 Saúde Corporal
                             </h1>
-                            <img className="w-72 rounded-xl mt-5 hover:scale-110 transition-transform duration-300 ease-in-out" src="./public/SaudeCorporal.jpg" />
+                            <img className="w-72 rounded-xl mt-5 hover:scale-110 transition-transform duration-300 ease-in-out" src="/SaudeCorporal.jpg" />
                         </div>
 
                         <div className="flex flex-col items-center" id="saudeMental">
                             <h1 className="text-colortxt_white font-semibold mb-2 text-2xl">
                                 Saúde Mental
                             </h1>
-                            <img className="w-72 rounded-xl mt-5 hover:scale-110 transition-transform duration-300 ease-in-out" src="./public/Mente.jpg" />
+                            <img className="w-72 rounded-xl mt-5 hover:scale-110 transition-transform duration-300 ease-in-out" src="/Mente.jpg" />
                         </div>
                     </div>
 
@@ -100,10 +99,10 @@ function Home() {
 
                 <div className="px-4 md:px-10">
                     <h1 className="text-4xl font-bold text-color_bg p-10 ml-4 text-center">Consultas Online:</h1>
-                    <div className="flex flex-col md:flex-row justify-between pl-72 pr-72 mt-10 ">
+                    <div className="flex flex-col md:flex-row justify-between  pr-78 mt-10 ">
                         <div className="flex flex-col w-full md:w-2/4">
                             <div className="bg-color_bg bg-opacity-75 p-8 rounded-lg shadow-md flex flex-col md:flex-row items-center md:items-start mb-5 " >
-                                <img className="w-32 rounded-full object-cover md:ml-4 mb-4 md:mb-0" src="./public/Ellipse 56.png" alt="" />
+                                <img className="w-32 rounded-full object-cover md:ml-4 mb-4 md:mb-0" src="/Ellipse 56.png" alt="" />
                                 <div className="flex flex-col ml-4">
                                     <h1 className="font-bold p-2 text-xl">Dr.Fulano Ciclano</h1>
                                     <p className="p-2 ">XX Anos</p>
@@ -114,7 +113,7 @@ function Home() {
 
                             <div className="bg-color_bg bg-opacity-75 p-8 rounded-lg shadow-md flex flex-col md:flex-row items-center md:items-start mb-5 ">
 
-                                <img className="w-32  rounded-full object-cover md:ml-4 mb-4 md:mb-0" src="./public/Ellipse 56 (1).png" alt="" />
+                                <img className="w-32  rounded-full object-cover md:ml-4 mb-4 md:mb-0" src="/Ellipse 56 (1).png" alt="" />
                                 <div className="flex flex-col ml-4">
                                     <h1 className="font-bold p-2 text-xl">Fulano Ciclano</h1>
                                     <p className="p-2 ">XX Anos</p>
@@ -126,7 +125,7 @@ function Home() {
 
                             <div className="bg-color_bg bg-opacity-75 p-8 rounded-lg shadow-md flex flex-col md:flex-row items-center md:items-start mb-5 ">
 
-                                <img className="w-32  rounded-full object-cover md:ml-4 mb-4 md:mb-0" src="./public/Ellipse 57.png" alt="" />
+                                <img className="w-32  rounded-full object-cover md:ml-4 mb-4 md:mb-0" src="/Ellipse 57.png" alt="" />
                                 <div className="flex flex-col ml-4">
                                     <h1 className="font-bold p-2 text-xl">Dra. Fulana Ciclana</h1>
                                     <p className="p-2 ">XX Anos</p>
@@ -156,7 +155,7 @@ function Home() {
 
                 <div className="flex flex-col">
                     <div className="flex justify-center items-center">
-                        <img className="rounded-3xl" src="./public/Buy.jpg" alt="" />
+                        <img className="rounded-3xl" src="/Buy.jpg" alt="" />
                     </div>
                     <div className="flex flex-row justify-center p-10 gap-32">
                         <h2 className="font-bold">Produto XX</h2>
@@ -187,7 +186,7 @@ function Home() {
             <div className="px-4 md:px-10 h-full w-full p-10  bg-Fundo">
                 <h1 className="text-4xl font-bold text-color_bg p-10 ml-4 mb-10 flex justify-center">Chat Box</h1>
                 <div className="bg-color_bg bg-opacity-75 p-8 rounded-xl shadow-md w-auto flex flex-col justify-start">
-                    <img className="w-20" src="./public/Logo.png" alt="" />
+                    <img className="w-20" src="/Logo.png" alt="" />
                     <div className="ml-10 bg-color_bg p-8 rounded-lg shadow-md h-16 w-96 flex items-center mt-5 mb-4">
                         <h1>Ola</h1>
                     </div>
@@ -199,10 +198,10 @@ function Home() {
                         <div className="mr-10 bg-color_bg p-8 rounded-lg shadow-md h-16 w-96 flex items-center">
                             <h1>lorem...</h1>
                         </div>
-                        <img className="w-18 h-15 " src="/public/Pessoa.png" alt="" />
+                        <img className="w-18 h-15 " src="/Pessoa.png" alt="" />
                     </div>
 
-                    <img className="w-20" src="/Public/Logo.png" alt="" />
+                    <img className="w-20" src="/Logo.png" alt="" />
                     <div className="ml-10 bg-color_bg p-8 rounded-lg shadow-md h-16 w-96 flex items-center mt-4">
                         <h1>Lorem ...</h1>
                     </div>
@@ -211,7 +210,7 @@ function Home() {
                         <div className="mr-10 bg-color_bg p-8 rounded-lg shadow-md h-16 w-96 flex items-center">
                             <h1>lorem...</h1>
                         </div>
-                        <img className="w-18 h-15 " src="/public/Pessoa.png" alt="" />
+                        <img className="w-18 h-15 " src="/Pessoa.png" alt="" />
                     </div>
 
                     <div className="bg-color_bg p-8 rounded-lg shadow-md w-full flex justify-center items-center mt-8">

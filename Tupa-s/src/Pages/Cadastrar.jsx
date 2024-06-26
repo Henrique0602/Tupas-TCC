@@ -11,7 +11,7 @@ function Cadastrar() {
             <div className="bg-color_bg bg-opacity-75 p-8 rounded-lg w-8/12 h-full flex flex-row justify-start ">
 
                 <div className="flex-col">
-                    <img className="w-28 mb-9" src="./public/Logo.png" alt="" />
+                    <img className="w-28 mb-9" src="./Logo.png" alt="" />
 
                     <h1 className="text-3xl text-color_vinho font-bold mb-6">Cadastre-se</h1>
 
