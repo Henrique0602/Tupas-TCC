@@ -11,7 +11,7 @@ function Login() {
 
         <div className="flex-col">
 
-          <img className="w-28 mb-4 mt-9" src="public/Logo.png" alt="" />
+          <img className="w-28 mb-4 mt-9" src="./public/Logo.png" alt="" />
 
           <div className=" mb-8">
             <h2 className="text-xl">Bem - vindo ao</h2>
