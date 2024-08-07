@@ -44,7 +44,7 @@ function Home() {
         <>
             <div className="min-h-screen bg-Fundo bg-cover">
                 <Header />
-                <div className="p-10 w-full h-full flex flex-row bg-color_bg opacity-75 justify-between items-center">
+                <div className="p-10 w-full h-full flex flex-row bg-color_bg justify-between items-center">
                     <div className="flex-col text-color_vinho ml-12 mt-6 mb-10">
                         <h2 className=" font-bold text-4xl mb-10 flex ">Home</h2>
                         <div className="flex-col ">
