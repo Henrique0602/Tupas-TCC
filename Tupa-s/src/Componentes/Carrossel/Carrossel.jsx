@@ -19,9 +19,9 @@ const Carrossel = () => {
     }, [currentIndex, images.length]);
 
     return (
-        <div className="flex justify-center items-center mb-10 mt-4">
-                <div className="max-w-lg mx-auto">
-                <img src={images[currentIndex]} alt={`Imagem ${currentIndex + 1}`} className="w-full h-full object-cover ml-8 -mt-12" />
+        <div className="flex justify-center items-center ml-40">
+                <div className="max-w-sm mx-auto ">
+                <img src={images[currentIndex]} alt={`Imagem ${currentIndex + 1}`}/>
                 </div>
             </div>
     );

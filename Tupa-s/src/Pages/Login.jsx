@@ -7,13 +7,13 @@ function Login() {
   return (
 
     <div className="flex justify-center items-center min-h-screen bg-Fundo bg-cover">
-      <div className="bg-color_bg bg-opacity-75 p-8 rounded-lg shadow-md w-auto flex flex-row justify-start ">
+      <div className="bg-color_bg bg-opacity-75 p-8 rounded-lg shadow-md w-auto flex flex-row justify-start">
 
         <div className="flex-col">
 
-          <img className="w-28 mb-4 mt-9" src="./Logo.png" alt="" />
+          <img className="w-28 mb-4 mt-9 ml-6" src="./Logo.png" alt="" />
 
-          <div className=" mb-8">
+          <div className=" mb-8 ml-4">
             <h2 className="text-xl">Bem - vindo ao</h2>
             <h1 className="text-color_vinho font-bold text-4xl ">Tupã's</h1>
           </div>
@@ -47,12 +47,8 @@ function Login() {
               <Link to="Cadastrar" className="font-semibold text-color_vinho hover:underline text-sm">Cadastrar-se</Link>
             </div>
           </div>
-
         </div>
-        <div className="flex flex-col justify-end h-auto">
-          <Carrossel/>
-        </div>
-
+          <Carrossel/>      
       </div>
     </div>
   );
