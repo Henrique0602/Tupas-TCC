@@ -14,14 +14,6 @@ body {
     overflow-x: hidden;
 }
 
-.wrapper {
-    width: 60%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .container {
     height: 400px;
     display: flex;
@@ -40,25 +32,13 @@ body {
     display: flex;
     align-items: flex-end;
     transition: .6s cubic-bezier(.28,-0.03,0,.99);
-    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.397);
 }
 
 .card > .row {
     color: white;
     display: flex;
     flex-wrap: nowrap;
-}
-
-.card > .row > .icon {
-    background: #380012;
-    color: white;
-    border-radius: 50%;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
-    font-weight: bold;
 }
 
 .card > .row > .description {
