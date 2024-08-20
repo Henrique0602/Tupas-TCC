@@ -1,6 +1,6 @@
 function Footer(){
     return(
-        <footer className=" bg-color_bg text-color_branco p-3 flex flex-row items-center justify-between">
+        <footer className="  text-color_branco p-3 flex flex-row items-center justify-between">
             <div className="flex flex-row items-center">
             <h1 className="text-6xl mt-3 mb-3 ml-3 mr-8 text-color_vinho font-medium tracking-widest">Tupã's</h1>
             <div className="flex flex-col font-medium text-color_preto text-xs space-y-2 ">
