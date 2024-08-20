@@ -1,5 +1,4 @@
 import Header from "../Componentes/Header/Header";
-import Footer from "../Componentes/Footer/Footer";
 import CardsSlider from "../Componentes/CardsSlider/CardsSlider";
 import { CiSearch } from "react-icons/ci";
 import { FaAppleWhole } from "react-icons/fa6";
@@ -14,17 +13,17 @@ function Home() {
 
                 <Header />
 
-                <div className=" flex justify-center">
+                <div className=" flex justify-end mr-16">
 
-                    <div class="relative w-2/12 mt-10">
-                        <input class="rounded-xl w-full h-11 pl-10 pr-4 focus:outline-none bg-transparent border-2 border-green-600" type="text" placeholder="Buscar" />
-                        <CiSearch class="absolute left-3 top-1/2 transform -translate-y-1/2 text-green-600" size="20px" />
+                    <div className="relative w-2/12 mt-10">
+                        <input className="rounded-xl w-full h-11 pl-10 pr-4 focus:outline-none bg-transparent border-2 border-green-600" type="text" placeholder="Buscar" />
+                        <CiSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-green-600" size="20px" />
                     </div>
 
                 </div>
 
 
-                <div className=" rounded-lg flex flex-row my-16 mx-16 justify-between ">
+                <div className=" rounded-lg flex flex-col my-16 mx-16 justify-between ">
                     <div className="flex flex-col ">
                         <h2 className="text-color_vinho font-bold text-lg py-6">Olá Fulano,</h2>
                         <h1 className="text-color_vinho font-bold text-4xl text-wrap max-w-sm ">Bem - Vindo!</h1>
@@ -40,7 +39,7 @@ function Home() {
                         <button className="text-color_verde">Ver todos</button>
                     </div>
 
-                    <div className="flex flex-row gap-8 mt-10 justify-center">
+                    <div className="flex flex-row gap-52 mt-10 justify-center">
                         <div>
                             <div className="border-2 border-grey-600w-22 h-16 p-5 rounded-lg flex items-center justify-center">
                                 <FaAppleWhole className="text-green-600 text-5xl " />
@@ -92,14 +91,14 @@ function Home() {
                 </div>
 
 
-                <div className=" flex flex-col my-16 mx-16">
+                <div className=" flex flex-col my-16 mx-16 justify-center ">
 
                    
                         <div className="flex flex-row gap-12 items-center ">
                             <h1 className="text-color_vinho font-bold text-lg">Nossos Profissionais</h1>
 
                         </div>
-                    <div className=" flex flex-row">
+                    <div className=" flex flex-row justify-center">
                         <div className="border-2 border-grey-700 mt-5 mb-10 flex flex-row rounded-3xl ">
                             <div className="border-2 border-grey-600 w-36 mr-10 rounded-2xl m-10 ">
                                 <img src="https://evorastudio.com.br/wp-content/uploads/2021/03/fotos-para-medicos-1.jpg" alt="" />
@@ -115,7 +114,7 @@ function Home() {
 
 
 
-                    <div className=" flex flex-row">
+                    <div className=" flex flex-row justify-center">
                         <div className="border-2 border-grey-900 mt-5 mb-10 flex flex-row rounded-3xl">
                             <div className="border-2 border-grey-600 w-36 mr-10 rounded-2xl m-10">
                                 <img src="https://evorastudio.com.br/wp-content/uploads/2021/03/fotos-para-medicos-1.jpg" alt="" />
