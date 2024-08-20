@@ -5,6 +5,7 @@ import { FaAppleWhole } from "react-icons/fa6";
 import { CgGym } from "react-icons/cg";
 import { GiBrain } from "react-icons/gi";
 import { FaUserDoctor } from "react-icons/fa6";
+import { FaKeyboard } from "react-icons/fa";
 
 function Home() {
     return (
@@ -131,6 +132,47 @@ function Home() {
 
 
                 </div>
+
+                <div className="px-4 md:px-10 h-full w-full p-10    ">
+                <h1 className="text-4xl font-bold text-black p-10 ml-4 mb-10 flex justify-center">Chat Box</h1>
+                <div className=" bg-opacity-75 p-8 rounded-xl shadow-md w-auto flex flex-col justify-start">
+                    <img className="w-20" src="/Logo.png" alt="" />
+                    <div className="ml-10  p-8 rounded-lg shadow-md h-16 w-96 flex items-center mt-5 mb-4">
+                        <h1>Olá</h1>
+                    </div>
+                    <div className="ml-10  p-8 rounded-lg shadow-md h-16 w-96 flex items-center  mb-4">
+                        <h1>Me diga seu Nome / Sua Idade / Seu Peso</h1>
+                    </div>
+
+                    <div className="flex justify-end ">
+                        <div className="mr-10  p-8 rounded-lg shadow-md h-16 w-96 flex items-center">
+                            <h1>lorem...</h1>
+                        </div>
+                        <img className="w-18 h-15 " src="/Pessoa.png" alt="" />
+                    </div>
+
+                    <img className="w-20" src="/Logo.png" alt="" />
+                    <div className="ml-10  p-8 rounded-lg shadow-md h-16 w-96 flex items-center mt-4">
+                        <h1>Lorem ...</h1>
+                    </div>
+
+                    <div className="flex justify-end ">
+                        <div className="mr-10  p-8 rounded-lg shadow-md h-16 w-96 flex items-center">
+                            <h1>lorem...</h1>
+                        </div>
+                        <img className="w-18 h-15 " src="/Pessoa.png" alt="" />
+                    </div>
+
+                    <div className=" p-8 rounded-lg shadow-md w-full flex justify-center items-center mt-8">
+                        <FaKeyboard className="text-3xl mr-3 text-color_vinho" />
+                        <h1 className="text-color_vinho font-bold">Digite aqui sua resposta</h1>
+                    </div>
+                </div>
+
+
+
+
+            </div>
 
             </div>
         </>
