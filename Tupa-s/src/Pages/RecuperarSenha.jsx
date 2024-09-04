@@ -3,8 +3,8 @@ import { Link } from "react-router-dom"
 
 function RecuperarSenha(){
     return(
-        <div className="flex justify-center items-center min-h-screen bg-Fundo bg-cover">
-            <div className="bg-color_bg bg-opacity-75 p-8 rounded-lg shadow-md w-8/12 h-full flex flex-row justify-start ">
+        <div className="flex justify-center items-center min-h-screen">
+            <div className="bg-color_bg bg-opacity-75 p-8 rounded-lg shadow-md w-auto h-full flex flex-row justify-start ">
 
                 <div className="flex-col w-96">
                     <img className="w-28 mb-9" src="public/Logo.png" alt="" />

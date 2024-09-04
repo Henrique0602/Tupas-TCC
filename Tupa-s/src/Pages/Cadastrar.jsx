@@ -7,8 +7,8 @@ import { Link } from "react-router-dom"
 
 function Cadastrar() {
     return (
-        <div className="flex justify-center items-center min-h-screen bg-Fundo bg-cover">
-            <div className="bg-color_bg bg-opacity-75 p-8 rounded-lg w-8/12 h-full flex flex-row justify-start ">
+        <div className="flex justify-center items-center min-h-screen b">
+            <div className="bg-color_bg bg-opacity-75 p-8 rounded-lg w-auto h-full flex flex-row justify-start ">
 
                 <div className="flex-col">
                     <img className="w-28 mb-9" src="./Logo.png" alt="" />
@@ -45,7 +45,7 @@ function Cadastrar() {
                         </form>
 
                         <div className="flex flex-col items-center">
-                            <Link to="/Filtragem" className="font-semibold text-color_vinho hover:underline text-sm">
+                            <Link to="/" className="font-semibold text-color_vinho hover:underline text-sm">
                             <button type="submit" className="bg-color_vinho text-colortxt_white py-2 rounded-3xl w-60 text-center mb-2 hover:bg-color_bege hover:text-color_vinho">Cadastrar</button>
                             </Link>
                             

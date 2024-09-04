@@ -88,3 +88,9 @@ body {
 .card[for="c4"] {
     background-image: url('/Alimentação.jpg');
 }
+
+.container {
+    width: 600px;
+    margin-left: 52px;
+}
+

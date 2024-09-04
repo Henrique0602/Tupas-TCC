@@ -1,12 +1,12 @@
 import { FaRegEnvelope } from "react-icons/fa";
 import { FaNeuter } from "react-icons/fa";
 import { Link } from "react-router-dom"
-import Carrossel from "../Componentes/Carrossel/Carrossel";
+
 
 function Login() {
   return (
 
-    <div className="flex justify-center items-center min-h-screen bg-Fundo bg-cover">
+    <div className="flex justify-center items-center min-h-screen ">
       <div className="bg-color_bg bg-opacity-75 p-8 rounded-lg shadow-md w-auto flex flex-row justify-start">
 
         <div className="flex-col">
@@ -48,7 +48,7 @@ function Login() {
             </div>
           </div>
         </div>
-          <Carrossel/>      
+     
       </div>
     </div>
   );

@@ -8,7 +8,6 @@ import Cadastrar from './Pages/Cadastrar.jsx'
 import PageNotFound from './Pages/PageNotFound.jsx'
 import RecuperarSenha from './Pages/RecuperarSenha.jsx'
 import Home from './Pages/Home.jsx'
-import Filtragem from './Pages/Filtragem.jsx'
 import Servicos from './Pages/Servicos.jsx'
 import Sobre from './Pages/Sobre.jsx'
 import NutriMusc from './Pages/NutriMusc.jsx'
@@ -32,7 +31,6 @@ const router = createBrowserRouter([
       { path: '/Home/Sobre', element: <Sobre/> },
       { path: '/Home/MarketPlace', element: <MarketPlace/> },
       { path: '/Home/Terapia', element: <Terapia/> },
-      { path : 'Filtragem', element: <Filtragem/> },
       { path: '*', element: <PageNotFound /> }
     ],
   },

@@ -1,6 +1,6 @@
 export default function CardsSlider() {
     return (
-        <div className="py-10 ml-20">
+        <div className="py-10 ml-20 ">
             <div className="container w-[600px] flex justify-center ml-52" >
                 <input type="radio" name="slide" id="c1" defaultChecked />
                 <label htmlFor="c1" className="card">
