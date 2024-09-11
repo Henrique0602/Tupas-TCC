@@ -13,6 +13,8 @@ import Sobre from './Pages/Sobre.jsx'
 import NutriMusc from './Pages/NutriMusc.jsx'
 import MarketPlace from './Pages/MarketPlace.jsx'
 import Terapia from './Pages/Terapia.jsx'
+import Confirmacao from './Pages/confirmacao.jsx'
+
 
 
 
@@ -31,6 +33,7 @@ const router = createBrowserRouter([
       { path: '/Home/Sobre', element: <Sobre/> },
       { path: '/Home/MarketPlace', element: <MarketPlace/> },
       { path: '/Home/Terapia', element: <Terapia/> },
+      {path: 'confirmacao', element: <Confirmacao/>},
       { path: '*', element: <PageNotFound /> }
     ],
   },

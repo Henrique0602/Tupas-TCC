@@ -9,7 +9,6 @@ function NavBar() {
             <li><Link to ="Home">Home</Link></li>
             <li><Link to = "servicos">Serviços</Link></li>
             <li><Link to = "sobre">Sobre</Link></li>
-            <li><Link to = "nutrimusc">N & M</Link></li>
             <li><Link to = "marketplace">Loja</Link></li>
             <li><Link to = "terapia">Terapia</Link></li>
         </ul>

@@ -23,12 +23,13 @@ export default {
         "colortxt_preto": "#2B2B2B",
         "colortxt_white": "#ffffff",
         "color_bege": "#DCCEB2",
-        "color_verde": "#002500",
+        "color_verde": "#325A32",
       },
 
       backgroundImage: {
         'Logo': "url('/Logo.png')",
         'Fundo': "url('/FundoLogin.png')",
+        'RecSenha': "url('/esqueceuSenha.png')"
       },
 
 
