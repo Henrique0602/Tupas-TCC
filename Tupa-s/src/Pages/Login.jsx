@@ -26,7 +26,7 @@ function Login() {
 
             <div className="relative mb-5 drop-shadow-md">
               <span className="absolute inset-y-0 left-3 flex items-center  text-black"><FaNeuter /></span>
-              <input type="password" className="w-full pl-10 pr-4 py-2 border rounded-full bg-white placeholder: text-blackfocus:outline-none" placeholder="Digite sua Senha" />
+              <input type="password" className="w-full pl-10 pr-4 py-2 border rounded-full bg-white focus:outline-none" placeholder="Digite sua Senha" />
             </div>
           </form>
 
