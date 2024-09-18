@@ -32,6 +32,8 @@ export default {
         'RecSenha': "url('/esqueceuSenha.png')"
       },
 
+    
+
 
 
     },

@@ -6,7 +6,7 @@ function NavBar() {
         
     <nav>
         <ul className='flex gap-12 ml-3 text-colorTxt font-bold'>
-            <li><Link to ="Home">Home</Link></li>
+            <li><Link to ="#">Home</Link></li>
             <li><Link to = "servicos">Serviços</Link></li>
             <li><Link to = "sobre">Sobre</Link></li>
             <li><Link to = "marketplace">Loja</Link></li>

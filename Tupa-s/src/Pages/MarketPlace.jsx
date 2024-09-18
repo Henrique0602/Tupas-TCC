@@ -1,5 +1,8 @@
-export default function MarketPlace(){
-    return(
-        <h1>Página de MarketPlace</h1>
+export default function MarketPlace() {
+    
+    return (
+    <h1>Ola</h1>
+
     );
 }
+

@@ -7,7 +7,7 @@ function Header() {
  
  
  
-    <div className="flex flex-row items-center bg-color_bg text-color_vinho p-8 shadow-lg justify-around">
+    <div className="flex flex-row items-center bg-color-white text-color_vinho p-8 shadow-lg justify-around">
      
       <div className="">
         <FaRegUserCircle className="text-3xl mr-3"/>
