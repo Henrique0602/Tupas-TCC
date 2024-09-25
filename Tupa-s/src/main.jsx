@@ -10,7 +10,6 @@ import RecuperarSenha from './Pages/RecuperarSenha.jsx'
 import Home from './Pages/Home.jsx'
 import Servicos from './Pages/Servicos.jsx'
 import Sobre from './Pages/Sobre.jsx'
-import NutriMusc from './Pages/NutriMusc.jsx'
 import MarketPlace from './Pages/MarketPlace.jsx'
 import Terapia from './Pages/Terapia.jsx'
 import Confirmacao from './Pages/confirmacao.jsx'
@@ -28,7 +27,6 @@ const router = createBrowserRouter([
       { path: 'Cadastrar', element: <Cadastrar /> },
       { path: 'Recuperarsenha', element: <RecuperarSenha/> },
       { path: 'Home', element: <Home/> },
-      { path: '/Home/NutriMusc', element: <NutriMusc/> },
       { path: '/Home/Servicos', element: <Servicos/> },
       { path: '/Home/Sobre', element: <Sobre/> },
       { path: '/Home/MarketPlace', element: <MarketPlace/> },
