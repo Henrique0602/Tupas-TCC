@@ -8,11 +8,8 @@ import Cadastrar from './Pages/Cadastrar.jsx'
 import PageNotFound from './Pages/PageNotFound.jsx'
 import RecuperarSenha from './Pages/RecuperarSenha.jsx'
 import Home from './Pages/Home.jsx'
-import Servicos from './Pages/Servicos.jsx'
-import Sobre from './Pages/Sobre.jsx'
 import MarketPlace from './Pages/MarketPlace.jsx'
-import Terapia from './Pages/Terapia.jsx'
-import Confirmacao from './Pages/confirmacao.jsx'
+import Confirmacao from './Pages/Confirmacao.jsx'
 
 
 
@@ -26,11 +23,8 @@ const router = createBrowserRouter([
       { index: true, element: <Login /> },
       { path: 'Cadastrar', element: <Cadastrar /> },
       { path: 'Recuperarsenha', element: <RecuperarSenha/> },
-      { path: 'Home', element: <Home/> },
-      { path: '/Home/Servicos', element: <Servicos/> },
-      { path: '/Home/Sobre', element: <Sobre/> },
-      { path: '/Home/MarketPlace', element: <MarketPlace/> },
-      { path: '/Home/Terapia', element: <Terapia/> },
+      { path: 'Home', element: <Home/> },     
+      { path: '/Home/MarketPlace', element: <MarketPlace/> },     
       {path: 'confirmacao', element: <Confirmacao/>},
       { path: '*', element: <PageNotFound /> }
     ],
