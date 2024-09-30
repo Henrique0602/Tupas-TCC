@@ -18,7 +18,7 @@ export default function Confirmacao() {
                         <img src="./verificacao.png" alt="" className="p-12" />
 
                         <div className="p-4">
-                            <h2 className=" font-bold text-xl">Codigo de verificação</h2>
+                            <h2 className=" font-bold text-xl">Codigo de verificação 2 etapas</h2>
                             <span className="text-wrap ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quasi voluptatum culpa.</span>
                         </div>
 
