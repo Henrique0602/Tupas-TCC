@@ -9,7 +9,7 @@ import PageNotFound from './Pages/PageNotFound.jsx'
 import RecuperarSenha from './Pages/RecuperarSenha.jsx'
 import Home from './Pages/Home.jsx'
 import MarketPlace from './Pages/MarketPlace.jsx'
-import Confirmacao from './Pages/Confirmacao.jsx'
+import Confirmacao from './Pages/confirmacao.jsx'
 
 
 
@@ -24,8 +24,9 @@ const router = createBrowserRouter([
       { path: 'Cadastrar', element: <Cadastrar /> },
       { path: 'Recuperarsenha', element: <RecuperarSenha/> },
       { path: 'Home', element: <Home/> },     
-      { path: '/Home/MarketPlace', element: <MarketPlace/> },     
-      {path: 'confirmacao', element: <Confirmacao/>},
+      { path: '/Home/MarketPlace', element: <MarketPlace/> },    
+      { path: '/Home/Confirmacao', element: <Confirmacao/>
+       },   
       { path: '*', element: <PageNotFound /> }
     ],
   },
