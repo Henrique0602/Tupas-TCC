@@ -50,7 +50,7 @@ function Home() {
         
         <div className="flex justify-between items-center">
           <h1 className="text-black font-bold text-2xl">Chat Box</h1>
-          <a href="#" className="text-green-600 text-sm font-medium">Ver todos</a>
+          <a href="" className="text-green-600 text-sm font-medium">Ver todos</a>
         </div>
 
         <div className="bg-opacity-75 p-8 rounded-xl shadow-md w-auto flex flex-col justify-start">
