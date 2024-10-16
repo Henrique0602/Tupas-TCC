@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { FaRegEnvelope, FaNeuter, FaFileSignature, FaHotel, FaPhoneAlt } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 import Input from '../Componentes/Input';

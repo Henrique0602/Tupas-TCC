@@ -1,18 +1,17 @@
-import React from 'react';
 import Header from '../Componentes/Header';
 import CardsSlider from '../Componentes/CardsSlider';
-import { FaAppleWhole, FaUserDoctor, FaKeyboard } from 'react-icons/fa6';
+import { FaAppleWhole, FaUserDoctor } from 'react-icons/fa6';
 import { GiBrain } from 'react-icons/gi';
 import Section from '../Componentes/Section';
 import ServiceCard from '../Componentes/ServiceCard';
-import ChatMessage from '../Componentes/ChatMessage';
+
 
 function Home() {
   return (
     <div className="bg-white">
       <Header />
 
-    
+
       <div className="rounded-lg flex flex-row my-16 mx-16 justify-between">
         <div className="flex flex-col">
           <h2 className="text-color_vinho font-bold text-lg py-6">Olá Fulano,</h2>
@@ -31,7 +30,7 @@ function Home() {
         <ServiceCard icon={FaUserDoctor} title="Consultas online" />
       </Section>
 
-      
+
       <Section title="Nossos Profissionais" linkText="Ver todos">
         <div className="border-2 border-grey-700 mt-5 mb-10 flex flex-row rounded-3xl">
           <div className="border-2 border-grey-600 w-36 mr-10 rounded-2xl m-10">
@@ -45,28 +44,23 @@ function Home() {
         </div>
       </Section>
 
-      
-      <div className="px-4 md:px-10 h-full w-full p-10">
-        
-        <div className="flex justify-between items-center">
-          <h1 className="text-black font-bold text-2xl">Chat Box</h1>
-          <a href="" className="text-green-600 text-sm font-medium">Ver todos</a>
+
+      <div className='relative'>
+        <a href="ChatBox">
+          <img
+            className="w-24 fixed bottom-0 right-8 bg-green-600 rounded-full"
+            src="/public/Logo.png"
+            alt="ChatBox"
+          />
+        </a>
+
+        <div className="fixed bottom-16 right-2 text-white bg-green-800 rounded-lg px-4 py-2 text-xs">
+          <span className="block"> ChatBot!</span>
+          <div className="absolute bottom-[-5px] right-6 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-green-800"></div>
         </div>
-
-        <div className="bg-opacity-75 p-8 rounded-xl shadow-md w-auto flex flex-col justify-start">
-          <ChatMessage text="Olá" />
-          <ChatMessage text="Me diga seu Nome / Sua Idade / Seu Peso" />
-          <ChatMessage isUser text="lorem..." avatar="/Pessoa.png" />
-          <ChatMessage text="Lorem ..." />
-          <ChatMessage isUser text="lorem..." avatar="/Pessoa.png" />
-
-          <div className="p-8 rounded-lg shadow-md w-full flex justify-center items-center mt-8">
-            <FaKeyboard className="text-3xl mr-3 text-color_vinho" />
-            <h1 className="text-color_vinho font-bold">Digite aqui sua resposta</h1>
-          </div>
-        </div>
-
       </div>
+
+
     </div>
   );
 }

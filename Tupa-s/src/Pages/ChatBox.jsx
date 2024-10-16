@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 import ChatHistory from "../Componentes/ChatHistory";
 import Loading from "../Componentes/Loading";
+import Home from "./Home";
 
 const ChatBox = () => {
     const [userInput, setUserInput] = useState("");
@@ -44,54 +45,57 @@ const ChatBox = () => {
     };
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gradient-to-b from-blue-100 to-blue-300">
-        {/* Contêiner principal centralizado */}
-        <div className="bg-white shadow-lg rounded-lg w-full max-w-2xl p-8">
+        <div className="flex items-center justify-center min-h-screen bg-gradient-to-b from-green-300 to-green-800">
+            {/* Contêiner principal centralizado */}
+            <div className="bg-white shadow-lg rounded-lg w-full max-w-4xl p-8">
 
-            {/* Cabeçalho */}
-            <h1 className="text-4xl font-extrabold text-center mb-6 text-blue-600">
-              ChatBot Tupã's
-            </h1>
+                {/* Cabeçalho */}
+                <h1 className="text-4xl font-extrabold text-center mb-6 text-green-600">
+                   Bem-Vindo ao Tupi
+                </h1>
+        
 
-            {/* Caixa de Chat com histórico */}
-            <div className="chat-container bg-gray-100 p-4 rounded-lg shadow-inner overflow-y-auto h-96 mb-6">
-                <ChatHistory chatHistory={chatHistory} />
-                <Loading isLoading={isLoading} />
-            </div>
+                {/* Caixa de Chat com histórico */}
+                <div className="chat-container bg-gray-100 p-4 rounded-lg shadow-inner overflow-y-auto h-96 mb-6">
+                    <ChatHistory chatHistory={chatHistory} />
+                    <Loading isLoading={isLoading} />
+                </div>
 
-            {/* Input de mensagem e botão "Enviar" */}
-            <div className="flex space-x-2">
-                <input
-                    type="text"
-                    className="flex-grow px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
-                    placeholder="Escreva sua mensagem..."
-                    value={userInput}
-                    onChange={handleUSerInput}
-                />
+                {/* Input de mensagem e botão "Enviar" */}
+                <div className="flex space-x-2">
+                    <input
+                        type="text"
+                        className="flex-grow px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300"
+                        placeholder="Escreva sua mensagem..."
+                        value={userInput}
+                        onChange={handleUSerInput}
+                    />
 
-                <button
-                    className={`px-6 py-2 rounded-lg font-semibold text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50 transition duration-300 ${
-                        isLoading ? "opacity-50 cursor-not-allowed" : ""
-                    }`}
-                    onClick={sendMessage}
-                    disabled={isLoading}
-                >
-                    Enviar
-                </button>
-            </div>
+                    <button
+                        className={`px-6 py-2 rounded-lg font-semibold text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300 focus:ring-opacity-50 transition duration-300 ${isLoading ? "opacity-50 cursor-not-allowed" : ""
+                            }`}
+                        onClick={sendMessage}
+                        disabled={isLoading}
+                    >
+                        Enviar
+                    </button>
+                </div>
 
-            {/* Botão de Limpar Chat */}
-            <div className="mt-6 text-center">
-                <button
-                    className="px-6 py-2 rounded-lg bg-red-500 text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-300 transition duration-300"
-                    onClick={clearChat}
-                >
-                    Limpar Chat
-                </button>
+                {/* Botão de Limpar Chat */}
+                <div className="mt-6 text-center flex justify-center space-x-4">
+                    <button
+                        className="px-6 py-2 rounded-lg bg-color_vinho text-white hover:bg-color_vinho focus:outline-none focus:ring-2 focus:ring-red-300 transition duration-300"
+                        onClick={clearChat}
+                    >
+                        Limpar Chat
+                    </button>
+                    <a className = "px-6 py-2 rounded-lg bg-color_vinho text-white hover:bg-color_vinho focus:outline-none focus:ring-2 focus:ring-red-300 transition duration-300" href="Home">Voltar</a>
+                    
+                </div>
+
             </div>
         </div>
-    </div>
-     
+
     );
 };
 
