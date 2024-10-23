@@ -24,11 +24,11 @@ function CartModal ({ cart, cartTotal, address, setAddress, addressWarning, hand
                 <input
                     type="text"
                     placeholder="Digite seu endereço completo..."
-                    className={`w-full border-2 p-1 rounded my-1 mt-2 ${addressWarning ? 'border-red-500' : ''}`}
+                    className={`w-full border-2 p-1 rounded my-1 mt-2 ${addressWarning ? 'border-green-500' : ''}`}
                     value={address}
                     onChange={e => setAddress(e.target.value)}
                 />
-                {addressWarning && <p className="text-red-600">Digite seu endereço correto</p>}
+                {addressWarning && <p className="text-green-600">Digite seu endereço correto</p>}
                 <div className="flex items-center justify-between mt-5 w-full">
                     <button onClick={() => setCartModalVisible(false)}>Fechar</button>
                     <button onClick={handleCheckout} className="bg-green-500 text-white px-4 py-1 rounded">Finalizar Pedido</button>

@@ -13,6 +13,7 @@ import Confirmacao from './Pages/confirmacao.jsx'
 import ChatBox from './Pages/ChatBox.jsx'
 import Consultas from './Pages/Consultas.jsx'
 import Sobre from './Pages/Sobre.jsx'
+import Terapia from './Pages/Terapia.jsx'
 
 
 
@@ -32,8 +33,9 @@ const router = createBrowserRouter([
       { path: 'Sobre', element: <Sobre/>}, 
       { path: '/Home/Confirmacao', element: <Confirmacao/>},   
       { path: 'ChatBox', element: <ChatBox/>},  
+      { path: 'Terapia', element: <Terapia/>}, 
       { path: '*', element: <PageNotFound /> }
-    ],
+    ],  
   },
 ]);
 

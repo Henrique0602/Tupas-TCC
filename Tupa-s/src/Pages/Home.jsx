@@ -26,7 +26,7 @@ function Home() {
 
       <Section title="Nossos Serviços" >
         <ServiceCard icon={FaAppleWhole} title="Nutrição" />
-        <ServiceCard icon={GiBrain} title="Terapia" />
+       <a href="Terapia"> <ServiceCard icon={GiBrain} title="Terapia" /></a>
         <a href="Consultas"><ServiceCard icon={FaUserDoctor} title="Consultas online" /></a>
       </Section>
 
