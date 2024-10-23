@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
-
 import ChatHistory from "../Componentes/ChatHistory";
 import Loading from "../Componentes/Loading";
-import Home from "./Home";
 
 const ChatBox = () => {
     const [userInput, setUserInput] = useState("");

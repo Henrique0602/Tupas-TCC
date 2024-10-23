@@ -11,6 +11,8 @@ import Home from './Pages/Home.jsx'
 import MarketPlace from './Pages/MarketPlace.jsx'
 import Confirmacao from './Pages/confirmacao.jsx'
 import ChatBox from './Pages/ChatBox.jsx'
+import Consultas from './Pages/Consultas.jsx'
+import Sobre from './Pages/Sobre.jsx'
 
 
 
@@ -26,6 +28,8 @@ const router = createBrowserRouter([
       { path: 'Recuperarsenha', element: <RecuperarSenha/> },
       { path: 'Home', element: <Home/> },     
       { path: '/Home/MarketPlace', element: <MarketPlace/> },    
+      { path: 'Consultas', element: <Consultas/>}, 
+      { path: 'Sobre', element: <Sobre/>}, 
       { path: '/Home/Confirmacao', element: <Confirmacao/>},   
       { path: 'ChatBox', element: <ChatBox/>},  
       { path: '*', element: <PageNotFound /> }

@@ -24,10 +24,10 @@ function Home() {
       </div>
 
 
-      <Section title="Nossos Serviços" linkText="Ver todos">
+      <Section title="Nossos Serviços" >
         <ServiceCard icon={FaAppleWhole} title="Nutrição" />
         <ServiceCard icon={GiBrain} title="Terapia" />
-        <ServiceCard icon={FaUserDoctor} title="Consultas online" />
+        <a href="Consultas"><ServiceCard icon={FaUserDoctor} title="Consultas online" /></a>
       </Section>
 
 
