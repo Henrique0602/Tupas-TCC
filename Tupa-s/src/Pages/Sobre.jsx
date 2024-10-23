@@ -1,4 +1,7 @@
 import Header from "../Componentes/Header"
+import { FaSquareInstagram } from "react-icons/fa6";
+import { BsTwitterX } from "react-icons/bs";
+import { FaFacebook } from "react-icons/fa6";
 
 function Sobre() {
     return (
@@ -19,14 +22,81 @@ function Sobre() {
                 </p>
                 <div>
                     <h2 className="text-xl md:text-2xl font-bold text-center mt-5 mb-10 text-gray-800 hover:text-green-600 transition-colors">Fundadores</h2>
-
-                    <div>
-                        <p>Raul L</p>
-                        <img src="" alt="" />
-                    </div>
+                    
                 </div>
 
-            </div>
+                <div className="flex flex-row gap-10 p-10 justify-center" >
+                    <div className="">
+                        <p className="flex justify-center mb-2">Raul L</p>
+                        <img src="/public/Ellipse 2.png" alt="" />
+                        <div className="flex flex-row justify-center mt-5 gap-2">
+                        <FaSquareInstagram/>
+                        <BsTwitterX/>
+                        <FaFacebook/>
+                        </div>
+                      
+
+                    </div>
+                    <div >
+                        <p className="flex justify-center mb-2">Vitor D</p>
+                        <img src="/public/Ellipse 2 (1).png" alt="" />
+                        <div className="flex flex-row justify-center mt-5 gap-2">
+                        <FaSquareInstagram/>
+                        <BsTwitterX/>
+                        <FaFacebook/>
+                        </div>
+                      
+
+                    </div>
+                    <div >
+                        <p className="flex justify-center mb-2">Mateus M</p>
+                        <img src="/public/Ellipse 2 (2).png" alt="" />
+                        <div className="flex flex-row justify-center mt-5 gap-2">
+                        <FaSquareInstagram/>
+                        <BsTwitterX/>
+                        <FaFacebook/>
+                        </div>
+                      
+
+                    </div>
+                    <div >
+                        <p className="flex justify-center mb-2">Henrique B</p>
+                        <img src="/public/Ellipse 2 (3).png" alt="" />
+                        <div className="flex flex-row justify-center mt-5 gap-2" >
+                        <FaSquareInstagram/>
+                        <BsTwitterX/>
+                        <FaFacebook/>
+                        </div>
+                      
+
+                    </div>
+                    <div >
+                        <p className="flex justify-center mb-2">Chloe M</p>
+                        <img src="/public/Ellipse 2 (4).png" alt="" />
+                        <div className="flex flex-row justify-center mt-5 gap-2">
+                        <FaSquareInstagram/>
+                        <BsTwitterX/>
+                        <FaFacebook/>
+                        </div>
+                      
+
+                    </div>
+                    <div >
+                        <p className=" flex justify-center mb-2">Eric Y</p>
+                        <img src="/public/Ellipse 2 (6).png" alt="" />
+                        <div className="flex flex-row justify-center mt-5 gap-2">
+                        <FaSquareInstagram/>
+                        <BsTwitterX/>
+                        <FaFacebook/>
+                        </div>
+                      
+
+                    </div>
+                </div>
+               
+                </div>
+
+
         </>
 
     )
