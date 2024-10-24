@@ -4,6 +4,10 @@ import { FaAppleWhole, FaUserDoctor } from 'react-icons/fa6';
 import { GiBrain } from 'react-icons/gi';
 import Section from '../Componentes/Section';
 import ServiceCard from '../Componentes/ServiceCard';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import 'swiper/css';
+import { LiaStarSolid } from "react-icons/lia";
 
 
 function Home() {
@@ -26,22 +30,109 @@ function Home() {
 
       <Section title="Nossos Serviços" >
         <ServiceCard icon={FaAppleWhole} title="Nutrição" />
-       <a href="Terapia"> <ServiceCard icon={GiBrain} title="Terapia" /></a>
+        <a href="Terapia"> <ServiceCard icon={GiBrain} title="Terapia" /></a>
         <a href="Consultas"><ServiceCard icon={FaUserDoctor} title="Consultas online" /></a>
       </Section>
 
 
-      <Section title="Nossos Profissionais" linkText="Ver todos">
-        <div className="border-2 border-grey-700 mt-5 mb-10 flex flex-row rounded-3xl">
-          <div className="border-2 border-grey-600 w-36 mr-10 rounded-2xl m-10">
-            <img src="https://evorastudio.com.br/wp-content/uploads/2021/03/fotos-para-medicos-1.jpg" alt="Profissional" />
+      <Section title="Nossos Profissionais">
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={30}
+          slidesPerView={2}
+          navigation
+          pagination={{ clickable: true }}
+          scrollbar={{ draggable: true }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log('slide change')}
+          className="mb-10"
+        >
+          <SwiperSlide> <div className="border-2 border-grey-700 mt-5 mb-10 flex flex-row rounded-3xl">
+            <div className="border-2 border-grey-600 w-40 mr-10 rounded-2xl m-12">
+              <img className="rounded-2xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbce17idxswgkpW9QpFKbFTQ81RuavmyYE1H_O6D1-4e4Kf0LGGrwqCH0UNmwOGGJA7OQ&usqp=CAU" alt="Profissional" />
+            </div>
+            <div className="flex flex-col justify-center mr-10">
+              <h3>Dra. Ciclana</h3>
+              <p>Função:</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div className="flex justify-end text-green-500 font-bold">
+                <a href="Medico1">Marcar Consulta</a>
+              </div>
+              <div className="flex flex-row justify-end gap-2 mt-2">
+
+                <a className="text-yellow-400 flex " href=""><LiaStarSolid /></a>
+                <p>4.7</p>
+              </div>
+
+            </div>
           </div>
-          <div className="flex flex-col justify-center mr-10">
-            <h3>Dr. Fulano</h3>
-            <p>Função</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </SwiperSlide>
+
+
+          <SwiperSlide><div className="border-2 border-grey-700 mt-5 mb-10 flex flex-row rounded-3xl">
+            <div className="border-2 border-grey-600 w-40 mr-10 rounded-2xl m-12">
+              <img className="rounded-2xl" src="https://storage.alboom.ninja/sites/15118/albuns/1009779/fotografia_medicas_medicos_campinas_estudio_consultorio-2.jpg?t=1693321616" alt="Profissional" />
+            </div>
+            <div className="flex flex-col justify-center mr-10">
+              <h3>Dra. Beltrana</h3>
+              <p>Função:</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div className="flex justify-end text-green-500 font-bold">
+                <a href="Medico2">Marcar Consulta</a>
+              </div>
+              <div className="flex flex-row justify-end gap-2 mt-2">
+
+                <a className="text-yellow-400 flex " href=""><LiaStarSolid /></a>
+                <p>4.7</p>
+              </div>
+
+            </div>
+          </div></SwiperSlide>
+          <SwiperSlide><div className="border-2 border-grey-700 mt-5 mb-10 flex flex-row rounded-3xl">
+            <div className="border-2 border-grey-600 w-40 mr-10 rounded-2xl m-12">
+              <img className="rounded-2xl" src="https://evorastudio.com.br/wp-content/uploads/2021/03/fotos-para-medicos-1.jpg" alt="Profissional" />
+            </div>
+            <div className="flex flex-col justify-center mr-10">
+              <h3>Dr. Fulano</h3>
+              <p>Função:</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div className="flex justify-end text-green-500 font-bold">
+                <a href="Medico3">Marcar Consulta</a>
+              </div>
+              <div className="flex flex-row justify-end gap-2 mt-2">
+
+                <a className="text-yellow-400 flex " href=""><LiaStarSolid /></a>
+                <p>4.7</p>
+              </div>
+
+            </div>
           </div>
-        </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="border-2 border-grey-700 mt-5 mb-10 flex flex-row rounded-3xl">
+            <div className="border-2 border-grey-600 w-40 mr-10 rounded-2xl m-12">
+              <img className="rounded-2xl" src="https://evorastudio.com.br/wp-content/uploads/2021/03/fotos-para-medicos-12-scaled.jpg" alt="Profissional" />
+            </div>
+            <div className="flex flex-col justify-center mr-10">
+              <h3>Dr. X</h3>
+              <p>Função:</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div className="flex justify-end text-green-500 font-bold">
+                <a href="Medico4">Marcar Consulta</a>
+              </div>
+              <div className="flex flex-row justify-end gap-2 mt-2">
+
+                <a className="text-yellow-400 flex " href=""><LiaStarSolid /></a>
+                <p>4.7</p>
+              </div>
+
+            </div>
+          </div>
+          </SwiperSlide>
+
+
+        </Swiper>
       </Section>
 
 
