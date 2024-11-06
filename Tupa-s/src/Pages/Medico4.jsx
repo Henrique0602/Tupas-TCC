@@ -34,7 +34,7 @@ function Medico4() {
                 </div>
 
                 <div className="flex flex-col mt-10">
-                    <h2 className="font-bold text-xl mb-5 p-6 ">Deixe um comentário para nossa Dra.</h2>
+                    <h2 className="font-bold text-xl mb-5 p-6 ">Deixe um comentário para nosso Dr X.</h2>
                     <textarea 
                         className="border border-gray-300 rounded-lg p-4 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-300 transition duration-200 resize-none"
                         rows="5"

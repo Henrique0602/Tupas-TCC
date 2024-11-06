@@ -8,7 +8,7 @@ function Header() {
  
     <div className="flex flex-row items-center bg-color-white text-color_vinho p-8 shadow-lg justify-between">
       <div className="">
-      <a href="/"> <FaRegUserCircle className="text-3xl mr-3"/> </a> 
+      <a href="/Login"> <FaRegUserCircle className="text-3xl mr-3"/> </a> 
       </div>
  
       <div className="">

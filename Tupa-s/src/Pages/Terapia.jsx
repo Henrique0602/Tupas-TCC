@@ -20,7 +20,7 @@ function Terapia() {
                         <p>Função:</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div className="flex justify-end text-green-500">
-                            <a href="">Marcar Consulta</a>
+                            <a href="Medico3">Marcar Consulta</a>
                            
                         </div>
                         <div className="flex flex-row justify-end gap-2 mt-2">
@@ -43,7 +43,7 @@ function Terapia() {
                         <p>Função:</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div className="flex justify-end text-green-500">
-                            <a href="">Marcar Consulta</a>
+                            <a href="Medico2">Marcar Consulta</a>
                         </div>
                         <div className="flex flex-row justify-end gap-2 mt-2">
                    
@@ -63,7 +63,7 @@ function Terapia() {
                         <p>Função:</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div className="flex justify-end text-green-500">
-                            <a href="">Marcar Consulta</a>
+                            <a href="Medico1">Marcar Consulta</a>
                         </div>
                         <div className="flex flex-row justify-end gap-2 mt-2">
                    

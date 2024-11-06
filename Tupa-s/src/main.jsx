@@ -18,6 +18,7 @@ import Medico1 from './Pages/Medico1.jsx'
 import Medico2 from './Pages/Medico2.jsx'
 import Medico3 from './Pages/Medico3.jsx'
 import Medico4 from './Pages/Medico4.jsx'
+import Nutricao from './Pages/Nutricao.jsx'
 
 
 
@@ -28,10 +29,11 @@ const router = createBrowserRouter([
     path: '/',
     element: <App />,
     children: [
-      { index: true, element: <Login /> },
+      { index: true, element: <Home /> },
       { path: 'Cadastrar', element: <Cadastrar /> },
       { path: 'Recuperarsenha', element: <RecuperarSenha/> },
-      { path: 'Home', element: <Home/> },     
+      { path: 'Home', element: <Home/> },   
+      { path: 'Login', element: <Login/> },   
       { path: '/Home/MarketPlace', element: <MarketPlace/> },    
       { path: 'Consultas', element: <Consultas/>}, 
       { path: 'Sobre', element: <Sobre/>}, 
@@ -42,6 +44,7 @@ const router = createBrowserRouter([
       {path: 'Medico2', element: <Medico2/>},
       {path: 'Medico3', element: <Medico3/>},
       {path: 'Medico4', element: <Medico4/>},
+      {path: 'Nutricao', element: <Nutricao/>},
       { path: '*', element: <PageNotFound /> }
     ],  
   },
