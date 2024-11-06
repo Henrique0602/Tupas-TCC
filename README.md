@@ -8,8 +8,8 @@ Tecnologias utilizadas:
 React / Tailwind / MongoDB / CSS / Javascript
 
 Como rodar o projeto : 
-Quando abrir o projeto no Visual Studio Code , abra o terminal e digite o seguinte codigo ( npm i ) logo depois digite ( npm run dev)
-Para rodar o Banco de dados, entre em outro terminal, entre na pasta server e digite o seguinte comando ( node nome do arquivo) 
+Quando abrir o projeto no Visual Studio Code , abra o terminal e digite o seguinte codigo (cd Tupa-s) logo depois ( npm i ) logo depois digite ( npm run dev)
+Para rodar o Banco de dados, entre em outro terminal, entre na pasta server e digite o seguinte comando ( node nome do arquivo.js) 
 
 Integrantes:
 
