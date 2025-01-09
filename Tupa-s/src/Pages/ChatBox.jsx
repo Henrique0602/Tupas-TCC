@@ -9,7 +9,7 @@ const ChatBox = () => {
     const [isLoading, setIsLoading] = useState(false);
 
     // inicializar sua gemeni Api
-    const genAI = new GoogleGenerativeAI("AIzaSyBJqTDT8ECh1x7vrRvtmVzQeQSYdQiwZnM");
+    const genAI = new GoogleGenerativeAI("AIzaSyAr6P8P3uYLRGzpTfBu3bIHSX2hD1k-pnw");
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
     const handleUSerInput = (e) => {

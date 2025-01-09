@@ -13,7 +13,7 @@ function Terapia() {
             <div className="w-2/5 m-10">
                 <div className="border-2 border-grey-700 mt-5 mb-10 flex flex-row rounded-3xl">
                     <div className="border-2 border-grey-600 w-32 mr-10 rounded-2xl m-10">
-                        <img src="https://evorastudio.com.br/wp-content/uploads/2021/03/fotos-para-medicos-1.jpg" alt="Profissional" />
+                        <img src="assets/doutor1.webp" alt="Profissional" />
                     </div>
                     <div className="flex flex-col justify-center mr-10">
                         <h3>Dr. Fulano</h3>
@@ -36,7 +36,7 @@ function Terapia() {
                 
                 <div className="border-2 border-grey-700 mt-5 mb-10 flex flex-row rounded-3xl">
                     <div className="border-2 border-grey-600 w-32 mr-10 rounded-3xl m-10">
-                        <img className="rounded-2xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz-7vL-ugIAPxy9q5XgjsEDZgfFbjM8YMLX549UgHTj5YQ0QXz5tWfdeHx5Ng0q739Un4&usqp=CAU" alt="Profissional" />
+                        <img className="rounded-2xl" src="assets/doutora3.jpg" alt="Profissional" />
                     </div>
                     <div className="flex flex-col justify-center mr-10">
                         <h3>Dra. Beltrana</h3>
@@ -56,7 +56,7 @@ function Terapia() {
                 
                 <div className="border-2 border-grey-700 mt-5 mb-10 flex flex-row rounded-3xl">
                     <div className="border-2 border-grey-600 w-32 mr-10 rounded-2xl m-10">
-                        <img className="rounded-2xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbce17idxswgkpW9QpFKbFTQ81RuavmyYE1H_O6D1-4e4Kf0LGGrwqCH0UNmwOGGJA7OQ&usqp=CAU" alt="Profissional" />
+                        <img className="rounded-2xl" src="assets/doutora1.jpg" alt="Profissional" />
                     </div>
                     <div className="flex flex-col justify-center mr-10">
                         <h3>Dra. Ciclana</h3>
