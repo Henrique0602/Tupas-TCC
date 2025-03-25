@@ -146,7 +146,7 @@ function Home() {
         </a>
 
         <div className="fixed bottom-16 right-2 text-white bg-green-800 rounded-lg px-4 py-2 text-xs">
-          <span className="block"> ChatBot!</span>
+          <span className="block"> ChatBot!!</span>
           <div className="absolute bottom-[-5px] right-6 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-green-800"></div>
         </div>
       </div>
