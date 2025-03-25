@@ -27,7 +27,7 @@ export default {
       },
 
       backgroundImage: {
-        'Logo': "url('/Logo.png')",
+        'Logo': "url('/public/Logo.png')",
         'Fundo': "url('/FundoLogin.png')",
         'RecSenha': "url('/esqueceuSenha.png')"
       },
