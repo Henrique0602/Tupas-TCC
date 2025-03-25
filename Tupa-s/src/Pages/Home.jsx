@@ -49,7 +49,7 @@ function Home() {
         >
           <SwiperSlide> <div className="border-2 border-grey-700 mt-5 mb-10 flex flex-row rounded-3xl">
             <div className="border-2 border-grey-600 w-40 mr-10 rounded-2xl m-12">
-              <img className="rounded-2xl" src="public/doutora1.jpg" alt="Profissional" />
+              <img className="rounded-2xl" src="/doutora1.jpg" alt="Profissional" />
             </div>
             <div className="flex flex-col justify-center mr-10">
               <h3>Dra. Ciclana</h3>
@@ -71,7 +71,7 @@ function Home() {
 
           <SwiperSlide><div className="border-2 border-grey-700 mt-5 mb-10 flex flex-row rounded-3xl">
             <div className="border-2 border-grey-600 w-40 mr-10 rounded-2xl m-12">
-              <img className="rounded-2xl" src="public/doutora2.jpg" alt="Profissional" />
+              <img className="rounded-2xl" src="/doutora2.jpg" alt="Profissional" />
             </div>
             <div className="flex flex-col justify-center mr-10">
               <h3>Dra. Beltrana</h3>
@@ -90,7 +90,7 @@ function Home() {
           </div></SwiperSlide>
           <SwiperSlide><div className="border-2 border-grey-700 mt-5 mb-10 flex flex-row rounded-3xl">
             <div className="border-2 border-grey-600 w-40 mr-10 rounded-2xl m-12">
-              <img className="rounded-2xl" src="public/doutor1.webp" alt="Profissional" />
+              <img className="rounded-2xl" src="/doutor1.webp" alt="Profissional" />
             </div>
             <div className="flex flex-col justify-center mr-10">
               <h3>Dr. Fulano</h3>
@@ -112,7 +112,7 @@ function Home() {
           <SwiperSlide>
             <div className="border-2 border-grey-700 mt-5 mb-10 flex flex-row rounded-3xl">
             <div className="border-2 border-grey-600 w-40 mr-10 rounded-2xl m-12">
-              <img className="rounded-2xl" src="public/doutor2.webp" alt="Profissional" />
+              <img className="rounded-2xl" src="/doutor2.webp" alt="Profissional" />
             </div>
             <div className="flex flex-col justify-center mr-10">
               <h3>Dr. X</h3>
@@ -140,7 +140,7 @@ function Home() {
         <a href="ChatBox">
           <img
             className="w-24 fixed bottom-0 right-8 bg-green-600 rounded-full"
-            src="public/Logo.png"
+            src="/Logo.png"
             alt="ChatBox"
           />
         </a>

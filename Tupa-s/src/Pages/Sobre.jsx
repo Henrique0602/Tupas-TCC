@@ -28,7 +28,7 @@ function Sobre() {
                 <div className="flex flex-row gap-10 p-10 justify-center" >
                     <div className="">
                         <p className="flex justify-center mb-2">Raul L</p>
-                        <img src="/public/Ellipse 2.png" alt="" />
+                        <img src="/Ellipse 2.png" alt="" />
                         <div className="flex flex-row justify-center mt-3 gap-2">
                         <FaSquareInstagram/>
                         <BsTwitterX/>
@@ -39,7 +39,7 @@ function Sobre() {
                     </div>
                     <div >
                         <p className="flex justify-center mb-2">Vitor D</p>
-                        <img src="/public/Ellipse 2 (1).png" alt="" />
+                        <img src="/Ellipse 2 (1).png" alt="" />
                         <div className="flex flex-row justify-center mt-3 gap-2">
                         <FaSquareInstagram/>
                         <BsTwitterX/>
@@ -50,7 +50,7 @@ function Sobre() {
                     </div>
                     <div >
                         <p className="flex justify-center mb-2">Mateus M</p>
-                        <img className = "w-24" src="/public/Mídia__1_-removebg-preview.png" alt="" />
+                        <img className = "w-24" src="/Mídia__1_-removebg-preview.png" alt="" />
                         <div className="flex flex-row justify-center mt-3 gap-2">
                         <FaSquareInstagram/>
                         <BsTwitterX/>
@@ -61,7 +61,7 @@ function Sobre() {
                     </div>
                     <div className="">
                         <p className="flex justify-center mb-2">Henrique B</p>
-                        <img className =  "w-24 rounded-3xl" src="/public/Henricao.png" alt="" />
+                        <img className =  "w-24 rounded-3xl" src="/Henricao.png" alt="" />
                         <div className="flex flex-row justify-center mt-1 gap-2" >
                         <FaSquareInstagram/>
                         <BsTwitterX/>
@@ -72,7 +72,7 @@ function Sobre() {
                     </div>
                     <div >
                         <p className="flex justify-center mb-2">Chloe M</p>
-                        <img src="/public/Ellipse 2 (4).png" alt="" />
+                        <img src="/Ellipse 2 (4).png" alt="" />
                         <div className="flex flex-row justify-center mt-3 gap-2">
                         <FaSquareInstagram/>
                         <BsTwitterX/>
@@ -83,7 +83,7 @@ function Sobre() {
                     </div>
                     <div >
                         <p className=" flex justify-center mb-2">Eric Y</p>
-                        <img src="/public/Ellipse 2 (6).png" alt="" />
+                        <img src="/Ellipse 2 (6).png" alt="" />
                         <div className="flex flex-row justify-center mt-3 gap-2">
                         <FaSquareInstagram/>
                         <BsTwitterX/>

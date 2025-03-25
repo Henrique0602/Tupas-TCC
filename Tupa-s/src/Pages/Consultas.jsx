@@ -29,12 +29,13 @@ function Consultas() {
                 onSlideChange={() => console.log('slide change')}
                 className="mb-10"
             >
-                <SwiperSlide><img src="/public/consultas-online2-scaled.jpg" alt="Consulta Online" /></SwiperSlide>
-                <SwiperSlide><img src="/public/nutricionista-online-consulta-celular.jpg" alt="Nutrição Online" /></SwiperSlide>
-                <SwiperSlide><img src="/public/1-1-1-1024x683.png" alt="Consulta" /></SwiperSlide>
-                <SwiperSlide><img src="/public/Alimentação.jpg" alt="Alimentação" /></SwiperSlide>
-                <SwiperSlide><img src="/public/1-1-1-1024x683.png" alt="Consulta" /></SwiperSlide>
-                <SwiperSlide><img src="/public/nutricionista-online-consulta-celular.jpg" alt="Nutrição Online" /></SwiperSlide>
+                <SwiperSlide><img src="/consultas-online2-scaled.jpg" alt="Consulta Online" /></SwiperSlide>
+                <SwiperSlide><img src="/nutricionista-online-consulta-celular.jpg" alt="Nutrição Online" /></SwiperSlide>
+                <SwiperSlide><img src="/1-1-1-1024x683.png" alt="Consulta" /></SwiperSlide>
+                <SwiperSlide><img src="/Alimentação.jpg" alt="Alimentação" /></SwiperSlide>
+                <SwiperSlide><img src="/1-1-1-1024x683.png" alt="Consulta" /></SwiperSlide>
+                <SwiperSlide><img src="/nutricionista-online-consulta-celular.jpg" alt="Nutrição Online" /></SwiperSlide>
+
             </Swiper>
 
             <div className="flex flex-wrap justify-center gap-5 p-5">
